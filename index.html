@@ -22,48 +22,53 @@
   <body>
     <!-- header section -->
     <header class="header">
-      <nav class="nav">
+      <div class="container heder-container">
+      <nav class="navigation">
         <a
           class="link logo"
           href="./index.html"
           aria-label="site-logo-WebStudio"
           >Web<span class="logo-part">Studio</span></a
         >
-        <ul class="list">
-          <li class="item">
+        <ul class="navigation-list">
+          <li class="navigation-item">
             <a class="link nav-title" href="#studio">Студія</a>
           </li>
-          <li class="item">
+          <li class="navigation-item">
             <a class="link nav-link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li class="item">
+          <li class="navigation-item">
             <a class="link nav-link" href="#contacts">Контакти</a>
           </li>
         </ul>
       </nav>
-      <ul class="nav-list">
-        <li class="nav-item">
+      <ul class="header-grup">
+        <li class="header-grup-item">
           <a class="link header-mailto mail" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li class="nav-item">
+        <li class="header-grup-item">
           <a class="link header-phone text" href="tel:+380961111111"
             >+38 096 111 11 11</a
           >
         </li>
       </ul>
+      </div>
     </header>
     <main class="main">
       <!-- section Hero -->
       <section class="hero">
+        <div class="container hero-container">
         <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
         <button class="btn" type="button">Замовити послугу</button>
+        </div>
       </section>
       <!-- section Feature -->
       <section class="feature">
+        <div class="container feature-container">
         <!-- Лoгічний заголовок -->
-        <h2 hidden>Feature</h2>
+        <h2 hidden class="visualiy-hidden">Feature</h2>
         <ul class="list-feature">
           <li class="feature-item">
             <h3 class="feature-subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -93,9 +98,11 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!-- section Services -->
       <section class="services">
+        <div class="container services-container">
         <h2 class="title-services">Чим ми займаємося</h2>
         <ul class="list-services">
           <li class="item-services">
@@ -123,9 +130,11 @@
             />
           </li>
         </ul>
+        </div>
       </section>
       <!-- section Our team -->
       <section class="team">
+        <div class="container team-container">
         <h2 class="title-team">Наша команда</h2>
         <ul class="list-team">
           <li class="item-team">
@@ -169,10 +178,12 @@
             <p class="desc-team">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- footer -->
     <footer class="footer">
+      <div class="container footer-container">
       <a
         class="link footer-logo"
         href="./index.html"
@@ -181,7 +192,7 @@
       >
       <address class="address">
         <p class="address-desc">м. Київ, пр-т Лесі Українки, 26</p>
-        <ul>
+        <ul class="footer-list">
           <li class="footer-item">
             <a class="link footer-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -194,6 +205,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
