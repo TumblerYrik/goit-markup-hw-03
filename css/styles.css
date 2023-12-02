@@ -9,6 +9,9 @@
     --darc-bg-cl: #2f303a;
     --main-bg-cl: #fff;
     --secondary-bg-cl: #f5f4fa;
+    /* grid items */
+    --items: 1;
+    --indent: 30px;
 }
 
 body {
@@ -38,6 +41,8 @@ p {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -64,13 +69,29 @@ img {
 .link:focus {
     color: #2196F3;
 }
+/*  
+    |=============================
+    | Сітка для колекції з елементов 
+    |=================================
+*/
+.grid {
+    display: flex;
+    flex-wrap: wrap;
 
-/* =====================
-        = header section =
-    ========================= */
+    gap: var(--indent);
+}
+.grid-item {
+    flex-basis: calc(100%-var(--indent) * (var(--items) - 1)) / var(--items);
+}
+/* 
+|=====================
+|  = header section =
+======================
+*/
 .header {
-    padding: 32px, 15px, 32px, 15px;
-    background: #fff;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background: var(--main-bg-cl);
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -105,7 +126,7 @@ img {
 .logo {
     margin-right: 93px;
     color: var(--accent-cl);
-    font-family: Raleway;
+    font-family: var(--secondary-font);
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
@@ -113,7 +134,7 @@ img {
 
 .logo-part {
     color: var(--secondary-txt-cl);
-    font-family: Raleway;
+    font-family: var(--secondary-font);
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
@@ -121,15 +142,15 @@ img {
 
 .nav-link {
     display: block;
-    color: #212121;
-    font-family: Roboto;
+    color: var(--secondary-txt-cl);
+    font-family: var(--main-font);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
 }
 
 .nav-title {
-    color: #2196F3;
+    color: var(--accent-cl);
     font-family: var(--main-font);
     font-size: 14px;
     font-weight: 500;
@@ -150,16 +171,16 @@ img {
 }
 
 .header-mailto {
-    color: #757575;
-    font-family: Roboto;
+    color: var(--main-txt-cl);
+    font-family: var(--main-font);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
 }
 
 .header-phone {
-    color: #757575;
-    font-family: Roboto;
+    color: var(--main-txt-cl);
+    font-family: var(--main-font);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
@@ -167,12 +188,12 @@ img {
 
 .mail:hover,
 .mail:focus {
-    color: #2196F3;
+    color: var(--accent-cl);
 }
 
 .text:hover,
 .text:focus {
-    color: #2196F3;
+    color: var(--accent-cl);
 }
 
 /*=========================
@@ -181,7 +202,7 @@ img {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: #2F303A;
+    background-color: var(--darc-bg-cl);
 }
 
 .title {
@@ -222,7 +243,7 @@ img {
 .btn:hover,
 .btn:focus {
     border-radius: 4px;
-    background-color: #2196F3;
+    background-color: var();
 }
 
 /* ======================
@@ -452,8 +473,7 @@ img {
 }
 
 .img-portfolio-item {
-    flex-basis: calc(100%/3-30px);
-    margin-left: 30px;
+    --items: 3;
 }
 
 
