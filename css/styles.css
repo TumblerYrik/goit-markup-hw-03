@@ -69,6 +69,12 @@ img {
 .link:focus {
     color: #2196F3;
 }
+
+/* логічний заголовок */
+article {
+    visibility: hidden;
+}
+
 /*  
     |=============================
     | Сітка для колекції з елементов 
@@ -80,17 +86,17 @@ img {
 
     gap: var(--indent);
 }
+
 .grid-item {
     flex-basis: calc(100%-var(--indent) * (var(--items) - 1)) / var(--items);
 }
+
 /* 
 |=====================
 |  = header section =
 ======================
 */
 .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
     background: var(--main-bg-cl);
     border-bottom: 1px solid #ECECEC;
 }
@@ -113,12 +119,10 @@ img {
 }
 
 .navigation-item {
-    margin-top: 32px;
     margin-right: 50px;
-    margin-bottom: 32px;
-    margin-left: 0;
-
 }
+
+
 .navigation-item:last-child {
     margin-right: 0;
 }
@@ -142,6 +146,8 @@ img {
 
 .nav-link {
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--secondary-txt-cl);
     font-family: var(--main-font);
     font-size: 14px;
@@ -160,6 +166,10 @@ img {
 .header-grup {
     display: flex;
     margin-left: auto;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 .header-grup-item {
@@ -251,23 +261,20 @@ img {
 ========================*/
 .feature {
     padding-top: 94px;
-    padding-bottom: 94px;
     background-color: var(--main-bg-cl);
-}
-
-.feature-container {
-    display: flex;
-    align-items: center;
 }
 
 .feature-list {
     display: flex;
     align-items: center;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .feature-item {
     margin-right: 30px;
+    width: 270px;
+    flex-shrink: 0;
 }
 
 .feature-item:last-child {
@@ -302,12 +309,6 @@ img {
     background-color: var(--main-bg-cl);
 }
 
-.services-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .title-services {
     margin-top: 0;
     margin-bottom: 50px;
@@ -323,11 +324,17 @@ img {
     display: flex;
     align-items: center;
     flex-direction: row;
+    margin: 0;
+    padding: 0;
 }
 
 .item-services {
     margin-right: 30px;
+    width: 370px;
+    height: 294px;
+    flex-shrink: 0;
 }
+
 .item-services:last-child {
     margin-right: 0;
 }
@@ -339,12 +346,6 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--secondary-bg-cl);
-}
-
-.team-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 .title-team {
@@ -361,11 +362,14 @@ img {
     display: flex;
     align-items: center;
     flex-direction: row;
+    margin: 0;
+    padding: 0;
 }
 
 .item-team {
     margin-right: 30px;
 }
+
 .item-team:last-child {
     margin-right: 0;
 }
@@ -406,7 +410,10 @@ img {
 }
 
 .portfolio-list {
-    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 56px;
     padding: 0;
     display: flex;
     align-items: center;
@@ -463,10 +470,7 @@ img {
 
 .img-portfolio-list {
     padding: 0;
-    margin-top: 56px;
-    margin-left: -30px;
-    margin-right: 0;
-    margin-bottom: -30px;
+    margin: 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
