@@ -44,6 +44,10 @@ img {
     max-width: 100%;
     height: auto;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .container {
     /* outline: 1px solid red; */
@@ -71,8 +75,18 @@ img {
 }
 
 /* логічний заголовок */
-article {
-    visibility: hidden;
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
 }
 
 /*  
@@ -156,6 +170,8 @@ article {
 }
 
 .nav-title {
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--accent-cl);
     font-family: var(--main-font);
     font-size: 14px;
@@ -260,7 +276,6 @@ article {
 ==  section Feature
 ========================*/
 .feature {
-    padding-top: 94px;
     background-color: var(--main-bg-cl);
 }
 
@@ -282,6 +297,7 @@ article {
 }
 
 .feature-subtitle {
+    margin-bottom: 10px;
     color: var(--secondary-txt-cl);
     font-family: var(--main-txt-cl);
     font-size: 14px;
@@ -304,8 +320,6 @@ article {
 ==section Services      
 ========================== */
 .services {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: var(--main-bg-cl);
 }
 
@@ -343,8 +357,6 @@ article {
 ==section Our team      
 ========================= */
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: var(--secondary-bg-cl);
 }
 
@@ -373,9 +385,12 @@ article {
 .item-team:last-child {
     margin-right: 0;
 }
+.blok-team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .subtitle-team {
-    margin-top: 30px;
     margin-bottom: 10px;
     color: var(--secondary-txt-cl);
     text-align: center;
@@ -398,8 +413,6 @@ article {
 == section Portfolio        
 =============================*/
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: var(--main-bg-cl);
 }
 
@@ -474,6 +487,7 @@ article {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    --items: 3;
 }
 
 .img-portfolio-item {
@@ -514,6 +528,7 @@ article {
 }
 
 .address-desc {
+    margin-bottom: 20px;
     color: #FFF;
     font-family: Roboto;
     font-size: 14px;
@@ -551,7 +566,11 @@ article {
 }
 
 .footer-list {
+    margin-bottom: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+}
+.footer-item {
+    margin-bottom: 20px;
 }
