@@ -494,7 +494,14 @@ img {
     --items: 3;
 }
 
-
+.portfolio-blok {
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-bottom: 1px solid #EEE;
+    border-right: solid #EEE;
+    border-left: solid #EEE;
+}
 .portfolio-title {
     color: var(--secondary-txt-cl);
     font-family: var(--main-font);
@@ -505,6 +512,7 @@ img {
 }
 
 .portfolio-desc {
+    margin-top: 4px;
     color: var(--main-txt-cl);
     font-family: var(--main-font);
     font-size: 16px;
