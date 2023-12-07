@@ -10,10 +10,9 @@
     --main-bg-cl: #fff;
     --secondary-bg-cl: #f5f4fa;
     /* grid items */
-    --items: 3;
+    --items: 1;
     --indent: 30px;
 }
-
 body {
     color: var(--main-txt-cl);
     font-family: var(--main-font);
@@ -490,10 +489,10 @@ img {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    --items: 3;
 }
 
 .img-portfolio-item {
+    width: 370px;
     --items: 3;
 }
 
